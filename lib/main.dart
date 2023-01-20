@@ -1,6 +1,4 @@
 import 'dart:io';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/cubit/bloc_observer.dart';
 import 'core/cubit/cubit.dart';
 import 'core/cubit/states.dart';
