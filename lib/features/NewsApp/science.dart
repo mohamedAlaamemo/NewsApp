@@ -16,7 +16,7 @@ class science extends StatelessWidget {
       listener:(context,state){} ,
       builder: (context,state){
         return ConditionalBuilder(
-            condition: state is !NewsAppsciencesLoding,
+            condition: state is !NewsAppSciencesLoding,
             builder:(context)=>ListView.separated(
               itemBuilder: (context,index)=>bulidArticalItem(list[index],context),
               separatorBuilder: (context,index)=>myDivider(),

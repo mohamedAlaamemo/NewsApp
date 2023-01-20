@@ -28,7 +28,7 @@ class NewsAppCubit extends Cubit<NewsAppState>{
   }
   List<dynamic>Business=[];
   void getBusiness(){
-    emit(NewsAppBussinessLoding());
+    emit(NewsAppBusinessLoding());
     DioHelper.getData(
       url: '/v2/top-headlines',
       query:
@@ -44,16 +44,16 @@ class NewsAppCubit extends Cubit<NewsAppState>{
         if(value.data['articles'][i]['urlToImage']!=null)
           Business.add(value.data['articles'][i]);
       }
-      emit(NewsAppBussinessSucsess());
+      emit(NewsAppBusinessSuccess());
     }).catchError((error){
       print(error);
-      emit(NewsAppBussinessError());
+      emit(NewsAppBusinessError());
     });
   }
 
   List<dynamic>sport=[];
   void getsports(){
-    emit(NewsAppsportLoding());
+    emit(NewsAppSportLoding());
     DioHelper.getData(
       url: '/v2/top-headlines',
       query:
@@ -69,16 +69,16 @@ class NewsAppCubit extends Cubit<NewsAppState>{
         if(value.data['articles'][i]['urlToImage']!=null)
           sport.add(value.data['articles'][i]);
       }
-      emit(NewsAppsportSucsess());
+      emit(NewsAppSportSuccess());
     }).catchError((error){
       print(error);
-      emit(NewsAppsportError());
+      emit(NewsAppSportError());
     });
   }
 
   List<dynamic>sciences=[];
   void getsciences(){
-    emit(NewsAppsciencesLoding());
+    emit(NewsAppSciencesLoding());
     DioHelper.getData(
       url: '/v2/top-headlines',
       query:
@@ -94,10 +94,10 @@ class NewsAppCubit extends Cubit<NewsAppState>{
         if(value.data['articles'][i]['urlToImage']!=null)
           sciences.add(value.data['articles'][i]);
       }
-      emit(NewsAppsciencesSucsess());
+      emit(NewsAppSciencesSuccess());
     }).catchError((error){
       print(error);
-      emit(NewsAppsciencesError());
+      emit(NewsAppSciencesError());
     });
   }
 
@@ -114,11 +114,10 @@ class NewsAppCubit extends Cubit<NewsAppState>{
 
     ).then((value) {
       search=value.data['articles'];
-      emit(NewsAppSearchSucsess());
+      emit(NewsAppSearchSuccess());
 
     }).catchError((error){
       print(error);
-      print('gggggggggggggggggggg');
       emit(NewsAppSearchError());
     });
   }

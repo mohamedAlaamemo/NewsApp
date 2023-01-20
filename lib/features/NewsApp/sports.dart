@@ -16,7 +16,7 @@ class sports extends StatelessWidget {
       listener:(context,state){} ,
       builder: (context,state){
         return ConditionalBuilder(
-            condition: state is !NewsAppsportLoding,
+            condition: state is !NewsAppSportLoding,
             builder:(context)=>ListView.separated(
               itemBuilder: (context,index)=>bulidArticalItem(list[index],context),
               separatorBuilder: (context,index)=>myDivider(),

@@ -10,7 +10,7 @@ import 'Cupit/NewsAppCupit.dart';
 import 'Cupit/NewsAppState.dart';
 
 class NewsApp extends StatelessWidget {
-  var scafoledkey = GlobalKey<ScaffoldState>();
+  var scaffoldKey = GlobalKey<ScaffoldState>();
   NewsApp({Key? key}) : super(key: key);
 
   @override
@@ -20,7 +20,7 @@ class NewsApp extends StatelessWidget {
       builder: (context,state){
         NewsAppCubit cubit=NewsAppCubit.get(context);
         return Scaffold(
-          key: scafoledkey,
+          key: scaffoldKey,
           appBar: AppBar(
             title:const  Text(
               "NEWS_APP",
