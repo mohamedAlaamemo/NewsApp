@@ -3,19 +3,19 @@ class NewsAppInitialState extends NewsAppState{}
 
 class NewsAppChangeScreen extends NewsAppState{}
 
-class NewsAppBussinessSucsess extends NewsAppState{}
-class NewsAppBussinessError extends NewsAppState{}
-class NewsAppBussinessLoding extends NewsAppState{}
+class NewsAppBusinessSuccess extends NewsAppState{}
+class NewsAppBusinessError extends NewsAppState{}
+class NewsAppBusinessLoding extends NewsAppState{}
 
-class NewsAppsportSucsess extends NewsAppState{}
-class NewsAppsportError extends NewsAppState{}
-class NewsAppsportLoding extends NewsAppState{}
+class NewsAppSportSuccess extends NewsAppState{}
+class NewsAppSportError extends NewsAppState{}
+class NewsAppSportLoding extends NewsAppState{}
 
 
-class NewsAppsciencesSucsess extends NewsAppState{}
-class NewsAppsciencesError extends NewsAppState{}
-class NewsAppsciencesLoding extends NewsAppState{}
+class NewsAppSciencesSuccess extends NewsAppState{}
+class NewsAppSciencesError extends NewsAppState{}
+class NewsAppSciencesLoding extends NewsAppState{}
 
-class NewsAppSearchSucsess extends NewsAppState{}
+class NewsAppSearchSuccess extends NewsAppState{}
 class NewsAppSearchError extends NewsAppState{}
 class NewsAppSearchLoding extends NewsAppState{}
